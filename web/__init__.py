@@ -30,7 +30,8 @@ class schemas:
            'body': str,
            'headers': {str: (':U', str, int)},
            'args': [str],
-           'kwargs': {str: str}}
+           'kwargs': {str: str},
+           'request': object}
 
     rep = {'code': (':O', int, 200),
            'reason': (':O', (':U', str, None), None),
