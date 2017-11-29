@@ -96,7 +96,8 @@ def _tornado_req_to_dict(obj: HTTPServerRequest, a: [str], kw: {str: str}) -> sc
             'body': body,
             'headers': dict(obj.headers),
             'args': a,
-            'kwargs': kw}
+            'kwargs': kw,
+            'request': obj}
 
 
 @schema.check
